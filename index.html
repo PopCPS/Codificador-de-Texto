@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="Imagens/alura_a_circulo.png">
+    </head>
+    <body class="app">
+        <header class="cabecalho">
+            <img class="cabecalho__logo" src="img/alura-logo.png">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__lista__items">
+                    <a class="cabecalho__lista__items__link" href="https://github.com/PopCPS" target="_blank">Github</a>
+                </li>
+                <li class="cabecalho__lista__items">
+                    <a class="cabecalho__lista__items__link" href="https://www.linkedin.com/in/artur-coelho-194202225/" target="_blank">Linkedin</a>
+                </li>
+            </ul>
+        </header>
+        <main class="conteudo">
+            <div class="conteudo__txtArea">
+                <div class="conteudo__txtArea__entrada">
+                    <textarea class="conteudo__txtArea__entrada__txt" id="textInput" rows="19" cols="30" placeholder="Insira o texto a ser Encriptografado" spellcheck="false" ></textarea> 
+                    <div class="conteudo__txtArea__entrada__btn">
+                        <button class="conteudo__txtArea__entrada__btn__cript" id="buttonEncode" class="btn-grad" onclick="textEncode()">Criptografar</button>
+                        <button class="conteudo__txtArea__entrada__btn__decript" id="buttonDecode" class="btn-grad" onclick="textDecode()">Decriptografar</button>
+                    </div>
+                </div> 
+                <div class="conteudo__txtArea__saida">
+                    <textarea class="conteudo__txtArea__saida__txt" id="textOutput" rows="19" cols="30" readonly></textarea>
+                    <button class="conteudo__txtArea__saida__copyBtn" id="buttonCopy" class="btn-grad" onclick="copyText()">Copiar</button>                
+                </div>
+            </div>
+            <div class="conteudo__txtArea__info">
+                <p class="conteudo__txtArea__info__txt">&#128712; Apenas letras minúsculas sem acento</p>
+            </div>
+        </main>
+    </body>
+    <script src="js/index.js"></script>
+</html>

@@ -1,0 +1,168 @@
+.app {
+    background-image: linear-gradient(45deg , #0b4082, #051934, #0b4082);
+    height: 100%;
+}
+
+.cabecalho {
+    /* padding: 3vh 5rem; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.cabecalho__logo {
+    height: 8vh;
+}
+
+.cabecalho__lista {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    color: #464646;
+    font-weight: 700;
+    align-items: center;
+}
+
+.cabecalho__lista__items {
+    margin-left: 2rem;
+}
+
+.cabecalho__lista__items__link {
+    text-decoration: none;
+    color: #FDFDFD;
+}
+
+.conteudo__txtArea {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    /* margin: 10vh 10vw; */
+}
+
+.conteudo__txtArea__entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteudo__txtArea__entrada__txt {
+    border: 3px solid #000000;
+    border-radius: 5vw;
+    padding: 1.5vw;
+    resize: none;
+    /* height: 40vh;
+    width: 35vw; */
+}
+
+.conteudo__txtArea__entrada__txt:focus {
+    outline: none;
+}
+
+.conteudo__txtArea__entrada__btn {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.conteudo__txtArea__entrada__btn__cript, .conteudo__txtArea__entrada__btn__decript, .conteudo__txtArea__saida__copyBtn {
+    padding: 17px 2%;
+    /* width: 10vw; */
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(to right, #167bf7 0%, #5FC3E4  51%, #FFFFFF  100%);
+    color: #000000;
+    font-weight: bold;
+}
+
+.conteudo__txtArea__entrada__btn__cript:hover, .conteudo__txtArea__entrada__btn__decript:hover, .conteudo__txtArea__saida__copyBtn:hover {
+    background-position: right center;
+    text-decoration: none;
+}
+
+.conteudo__txtArea__saida {
+    border: 3px solid #000000;
+    border-radius: 5vw;
+    padding: 1.5vw;
+    background-color: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo__txtArea__saida__txt {
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+.conteudo__txtArea__info__txt {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    color: #FDFDFD;
+    margin: 1.5vh;
+}
+
+@media screen and (min-width: 0) {
+    .conteudo__txtArea {
+        flex-direction: column;
+        margin: 0 10vw;
+        justify-content: center;
+    }
+
+    .cabecalho {
+        padding: 3vh 2rem;
+    }
+
+    .conteudo__txtArea__saida {
+        width: 75vw;
+    }
+
+    .conteudo__txtArea__entrada__txt, .conteudo__txtArea__saida__txt {
+        width: 75vw;
+        height: 40vh;
+        font-size: 1em;
+    }
+
+    .conteudo__txtArea__entrada__btn__cript, .conteudo__txtArea__entrada__btn__decript, .conteudo__txtArea__saida__copyBtn {
+        margin: 2vw;
+        height: 10vh;
+        font-size: .9rem;
+        width: 35vw;
+    }
+
+    .cabecalho__lista {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__lista {
+        font-size: 1.5rem;
+    }
+
+    .conteudo__txtArea {
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    .conteudo__txtArea__entrada__txt, .conteudo__txtArea__saida__txt {
+        width: 35vw;
+        height: 60vh;
+    }
+
+    .conteudo__txtArea__entrada__btn__cript, .conteudo__txtArea__entrada__btn__decript, .conteudo__txtArea__saida__copyBtn {
+        width: 16vw;
+        font-size: 16px;
+        height: 10vh;
+    }
+
+    .conteudo__txtArea__saida__copyBtn {
+        width: 25vw;
+    }
+
+}
