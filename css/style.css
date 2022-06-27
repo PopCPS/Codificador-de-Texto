@@ -47,10 +47,12 @@
 }
 
 .conteudo__txtArea__entrada__txt {
-    border: 3px solid #000000;
-    border-radius: 5vw;
+    border-radius: 20px;
     padding: 1.5vw;
     resize: none;
+    border: 2px solid #0d4d9c;
+    background-color: #081c3c;
+    color: #FDFDFD;
     /* height: 40vh;
     width: 35vw; */
 }
@@ -66,7 +68,6 @@
 }
 
 .conteudo__txtArea__entrada__btn__cript, .conteudo__txtArea__entrada__btn__decript, .conteudo__txtArea__saida__copyBtn {
-    padding: 17px 2%;
     /* width: 10vw; */
     text-align: center;
     transition: 0.5s;
@@ -84,10 +85,10 @@
 }
 
 .conteudo__txtArea__saida {
-    border: 3px solid #000000;
-    border-radius: 5vw;
+    border: 2px solid #0d4d9c;
+    border-radius: 20px;
     padding: 1.5vw;
-    background-color: #FDFDFD;
+    background-color: #081c3c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,6 +98,7 @@
     outline: none;
     resize: none;
     border: none;
+    background-color: #081c3c;
 }
 
 .conteudo__txtArea__info__txt {
@@ -104,7 +106,7 @@
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     color: #FDFDFD;
-    margin: 1.5vh;
+    margin: 1.8vh;
 }
 
 @media screen and (min-width: 0) {
@@ -129,7 +131,7 @@
     }
 
     .conteudo__txtArea__entrada__btn__cript, .conteudo__txtArea__entrada__btn__decript, .conteudo__txtArea__saida__copyBtn {
-        margin: 2vw;
+        margin: 1vw;
         height: 10vh;
         font-size: .9rem;
         width: 35vw;
@@ -148,17 +150,27 @@
     .conteudo__txtArea {
         flex-direction: row;
         height: 80vh;
+        justify-content: space-around;
     }
 
-    .conteudo__txtArea__entrada__txt, .conteudo__txtArea__saida__txt {
-        width: 35vw;
+    .conteudo__txtArea__entrada__txt {
+        width: 30vw;
         height: 60vh;
     }
 
+    .conteudo__txtArea__saida__txt {
+        width: 20vw;
+        height: 63vh;
+    }
+
+    .conteudo__txtArea__saida {
+        width: 25vw;
+    }
+
     .conteudo__txtArea__entrada__btn__cript, .conteudo__txtArea__entrada__btn__decript, .conteudo__txtArea__saida__copyBtn {
-        width: 16vw;
+        width: 15vw;
         font-size: 16px;
-        height: 10vh;
+        height: 8vh;
     }
 
     .conteudo__txtArea__saida__copyBtn {
